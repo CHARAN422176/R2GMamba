@@ -1,0 +1,1 @@
+pycocoevalcap/meteor/data/paraphrase-en.gz filter=lfs diff=lfs merge=lfs -text
