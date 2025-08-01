@@ -11,8 +11,8 @@ import torch.nn as nn
 import torch.nn.functional as F
 
 from .att_model import pack_wrapper, AttModel
-# from .mamba_ssm.modules.mamba_simple import Mamba as Encoder
-from mamba_ssm.models.mamba_simple import Mamba as Encoder
+from .mamba_ssm.modules.mamba_simple import Mamba as Encoder
+# from mamba_ssm.models.mamba_simple import Mamba as Encoder
 
 
 def clones(module, N):
