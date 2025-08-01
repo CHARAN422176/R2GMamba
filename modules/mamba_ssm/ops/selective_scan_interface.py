@@ -13,7 +13,13 @@ except ImportError:
     causal_conv1d_fn = None
     causal_conv1d_cuda = None
 
-import selective_scan_cuda
+# import selective_scan_cuda
+try:
+    import selective_scan_cuda
+except ImportError:
+    selective_scan_cuda = None
+    print("Warning: selective_scan_cuda not available, running in CPU-only mode.")
+
 
 
 class SelectiveScanFn(torch.autograd.Function):
